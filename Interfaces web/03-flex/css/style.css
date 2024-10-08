@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    /* float: left; */
+    border: 1px solid black;
+
+}
+.container__layout{
+    /* float: left; */
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;/* esto es lo mismo que las dos de arriba y lo mismo que poner solo display flex*/
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.layout__box{
+    /* float: left; */
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid gray;
+    margin: 10px;
+
+    flex-grow: 1;
+    min-width: 20%;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.layout__box--red{
+    background-color: red;
+    color: white;
+    /* flex-grow: 4%;cambia el tamaño del contenedor en % respecto a los demas */
+    order: 2;
+    flex-basis: calc((70%/3)+10px);
+}
+
+.layout__box--yellow{
+    background-color: yellow;
+    color: black;
+    order: 5;
+    flex-basis: calc((70%/3)+20px);
+}
+.layout__box--green{
+    background-color: green;
+    color: white;    
+    order: 4;
+    flex-basis: calc((70%/3)+20px);
+}
+.layout__box--orange{
+    background-color: orange;
+    color: white;
+    align-self: flex-end;
+    order: 3;
+}
+.layout__box--pink{
+    background-color: pink;
+    color: white;
+    order: 6;
+}
+.layout__box--blue{
+    background-color: blue;
+    color: white;
+    align-self: flex-start;
+    order: 1;
+}
