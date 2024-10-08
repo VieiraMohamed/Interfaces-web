@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0, 8 ease;
+}
+
+.logo:hover {
+    color: #04fded;
+    text-shadow: 0 0 25px #04fded,
+        0 0 50px #04fded;
+    transform: scale(1.5);
+}
+
+span {
+    color: #04fded;
+}
+
+.bar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: 0, 5s ease;
+
+}
+
+.bar a:hover {
+    color: #04fded;
+    
+}
+
+.seccion {
+    width: 100%;
+    min-height: 80vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.seccion2 {
+    max-width: 900px;
+}
+
+.seccion2 h3 {
+    font-size: 42px;
+    color: white;
+}
+
+.seccion2 h1 {
+    font-size: 62px;
+    line-height: 1.2;
+    color: white;
+
+}
+
+.seccion p {
+    font-size: 25px;
+    color: white;
+}
+
+.imgPrincipal img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #04fded,
+        0 0 50px #04fded;
+}
+
+.aficiones {
+    width: 100%;
+    min-height: 20vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 12% 0;
+}
+
+.aficiones1 h3 {
+    font-size: 45px;
+    color: #04fded;
+}
+.aficiones2 p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.Ciudades{
+    width: 100%;
+    min-height: 80vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 12% 0;
+}
+.Ciudades1 h3{
+    font-size: 45px;
+    color: #04fded;
+}
+.container {
+    white-space: nowrap;  
+}
+.texto{
+    font-size: 20px;
+    color: #04fded;
+    margin-left: 14%;
+}
+.texto1{
+    font-size: 20px;
+    color: #04fded;
+    margin-left: 35%;
+}
+.texto2{
+    font-size: 20px;
+    color: #04fded;
+    margin-left: 35%;
+}
+
+.foot {
+    width: 100%;
+    min-height: 40vh;
+    background: black;
+    display: flex;
+    align-items: center;
+
+    padding: 30px 12%; 
+}
+
+.foot a {
+    display: inline-block; 
+    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    
+}
+
+.foot img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 20%;
+    border-color: #04fded;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foot a:hover img {
+    
+    border-radius: 20%;
+    border-color: #04fded;
+    box-shadow: 0 0 25px #04fded, 0 0 50px #04fded; 
+    transform: scale(1.2); 
+}
+
+

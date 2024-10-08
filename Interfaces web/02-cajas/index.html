@@ -1,0 +1,161 @@
+<!--  Ejercicio Resumen - Cajas / Animaciones y Transiciones
+1.- Crear estructura html que cuente con un Contenedor General, cabecera, menú, 
+barra lateral, sección de contenido principal, elementos dentro del contenedor 
+principal y footer 
+2.- Todo el contenido debe estar dentro del contenedor general y su ancho será 
+de 1200px
+3.- Header debe ocupar el 100% del ancho y tener un texto grande.
+4.- Menú debe tener los elementos uno al lado del otro. Debe disponer de un menú desplegable en diversos elementos.
+5.- El contenido principal debe tener un ancho del 70%. 
+6.- El contenido dentro del contenedor principal debe ser una cuadrícula
+con cuatro líneas de 2 cajas.
+7.- La barra lateral debe tener un ancho del 30%
+8.- El footer debe tener un ancho del 100% y estar al final del todo.-->
+<!-- Aspectos adicionales:
+- Caja Libre 1 y 2 (repasar z-index)
+- Caja Fija a la izquierda
+- Animaciones y Transiciones (formulario y caja)  -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de cajas</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+
+<body>
+    <!-- Principal -->
+    <main class="container">
+        <header class="header">
+            <h1 class="header__title">Modelo de Cajas - Sesión1</h1>
+            <h2 class="header__subtitle">CSS</h2>
+        </header>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="list__item"><a href="#">Inicio</a></li>
+                <li class="list__item">
+                    <a href="#">Contenido</a>
+                    <ul class="item__sublist">
+                        <li class="sublist_item"><a href="#">Películas</a></li>
+                        <li class="sublist_item"><a href="#">Juegos</a></li>
+                    </ul>
+                </li>
+                <li class="list__item">
+                    <a href="#">Blog</a>
+                    <ul class="item__sublist">
+                        <li class="sublist_item"><a href="#">Películas</a></li>
+                        <li class="sublist_item"><a href="#">Juegos</a></li>
+                    </ul>
+                </li>
+                <li class="list__item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Fin barra de navegación -->
+        <section class="content">
+            <h1 class="content__title">Contenido Principal - Cajas</h1>
+            <div class="content__box">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box">
+            <p class="box__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad velit labore molestias
+                suscipit provident dolores repudiandae, impedit at doloremque voluptatibus, voluptas deleniti totam
+                dolorem placeat unde amet obcaecati tempore minima.</p>
+            </div>
+            <div class="content__box content__box--sombra">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--sombra">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--redondo">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--redondo">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--3d">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--3d">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--shadowsMultiple">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+            <div class="content__box content__box--shadowsMultiple2">
+                <p class="box__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, amet illo. Ex quod
+                    similique vero incidunt modi voluptas nemo nobis et architecto debitis, at rem! Possimus veniam
+                    labore quia placeat.</p>
+            </div>
+        </section>
+        <aside class="aside">
+            <div class="aside__box">
+                <h2 class="box__title">Caja Lateral</h2>
+                <p class="box__tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum odio deserunt
+                    eos, id quam ut molestias itaque, ea veritatis veniam quae repellat alias inventore pariatur,
+                    repudiandae adipisci modi recusandae temporibus.
+                </p>
+                <p class="box__tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum odio deserunt
+                    eos, id quam ut molestias itaque, ea veritatis veniam quae repellat alias inventore pariatur,
+                    repudiandae adipisci modi recusandae temporibus.
+                </p>
+                <p class="box__tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum odio deserunt
+                    eos, id quam ut molestias itaque, ea veritatis veniam quae repellat alias inventore pariatur,
+                    repudiandae adipisci modi recusandae temporibus.
+                </p>
+                <p class="box__tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum odio deserunt
+                    eos, id quam ut molestias itaque, ea veritatis veniam quae repellat alias inventore pariatur,
+                    repudiandae adipisci modi recusandae temporibus.
+                </p>
+                <p class="box__tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum odio deserunt
+                    eos, id quam ut molestias itaque, ea veritatis veniam quae repellat alias inventore pariatur,
+                    repudiandae adipisci modi recusandae temporibus.
+                </p>
+                
+            </div>
+        </aside>
+        <div class="box__free box__free1">
+            Caja LIBRE1
+        </div>
+        <div class="box__free box__free2">
+            Caja LIBRE2
+        </div>
+        
+        <footer class="footer">
+            Todos los derechos reservados &copy; Jose Antonio Vieira
+        </footer>
+    </main>
+    <div class="box__static">
+        Caja estatica
+    </div>
+    <p class="transformed">Girando</p>
+    <div class="box__animated">Soy una caja</div>
+    <section class="box__container2">
+      CAJA CONTENEDORA
+      <div class="box__free box__free--3">Caja LIBRE3</div>
+      <div class="box__free box__free--4">Caja LIBRE4</div>
+    </section>
+
+</body>
+
+</html>
